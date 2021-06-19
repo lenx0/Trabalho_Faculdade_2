@@ -1,6 +1,8 @@
 package loja_de_eletronicos;
+import java.io.Serializable;
 
-public abstract class Equipamento {
+public abstract class Equipamento implements Serializable{
+		private static final long serialVersionUID = 1L;
 		protected String nome;
 		protected String marca;
 		protected String modelo;
