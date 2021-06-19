@@ -4,13 +4,12 @@ public abstract class Equipamento {
 		protected String nome;
 		protected String marca;
 		protected String modelo;
-		protected int tamanho_tela;
+		protected int tamanhoTela;
 		
-		public Equipamento(String nome, String marca, String modelo, int tamanho_tela) {
+		public Equipamento(String nome, String marca, int tamanhoTela) {
 			this.nome = nome;
 			this.marca = marca;
-			this.modelo = modelo;
-			this.tamanho_tela = tamanho_tela;
+			this.tamanhoTela = tamanhoTela;
 		}
 
 		public String getNome() {
@@ -37,11 +36,11 @@ public abstract class Equipamento {
 			this.modelo = modelo;
 		}
 
-		public int getTamanho_tela() {
-			return tamanho_tela;
+		public int gettamanhoTela() {
+			return tamanhoTela;
 		}
 
-		public void setTamanho_tela(int tamanho_tela) {
-			this.tamanho_tela = tamanho_tela;
+		public void settamanhoTela(int tamanhoTela) {
+			this.tamanhoTela = tamanhoTela;
 		}
 }
